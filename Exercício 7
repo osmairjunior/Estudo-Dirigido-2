@@ -1,0 +1,79 @@
+<?php
+
+//7. Faça um algoritmo que leia três números e mostre o maior e o menor deles.
+
+
+print "Digite o primeiro número: ";
+$num1 = fgets(STDIN);
+
+print "Digite o segundo número: ";
+$num2 = fgets(STDIN);
+
+print "Digite o terceiro número: ";
+$num3 = fgets(STDIN);
+
+
+//Número maior
+
+if ($num1 > $num2 and $num1 > $num3) {
+
+    print "O primeiro número é o maior \n";
+
+}
+
+elseif ($num2 > $num1 and $num2 > $num3) {
+
+    print "O segundo número é o maior \n";
+
+}
+
+elseif ($num3 > $num1 and $num3 > $num2) {
+
+    print "O terceiro número é o maior \n";
+
+}
+
+elseif ($num1 == $num2 and $num1 == $num3) {
+    print "Todos os números são iguais \n";
+
+}
+
+//Número menor
+
+if ($num1 < $num2 and $num1 < $num3) {
+
+    print "O primeiro número é o menor \n";
+
+}
+
+elseif ($num2 < $num1 and $num2 < $num3) {
+
+    print "O segundo número é o menor \n";
+
+}
+
+elseif ($num3 < $num1 and $num3 < $num2) {
+
+    print "O terceiro número é o menor \n";
+
+}
+
+//se tiver dois números iguais:
+
+if ($num1 == $num2 and $num1 != $num3) {
+
+    print "O primeiro e o segundo números são iguais \n";
+
+}
+
+elseif ($num1 == $num3 and $num1 != $num2) {
+
+    print "O primeiro e o terceiro números são iguais \n";
+
+}
+
+elseif ($num2 == $num3 and $num2 != $num1) {
+
+    print "O segundo e o terceiro números são iguais \n";
+
+}
