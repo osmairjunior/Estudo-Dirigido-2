@@ -1,0 +1,42 @@
+<?php
+
+//8. Faça um programa que pergunte o preço de três produtos e informe 
+//qual produto você deve comprar, sabendo que a decisão é sempre pelo mais barato
+
+
+print "Digite o preço do primeiro produto: R$";
+$preco1 = fgets (STDIN);
+
+print "Digite o preço do segundo produto: R$";
+$preco2 = fgets (STDIN);
+
+print "Digite o preço do terceiro produto: R$";
+$preco3 = fgets (STDIN);
+
+if ($preco1 < $preco2 and $preco1 < $preco3) {
+    print "Você deveria comprar o primeiro produto, ta mais em conta! \n";
+}
+
+elseif ($preco2 < $preco3 and $preco2 < $preco1) {
+    print "Você deveria comprar o segundo produto, ta mais em conta! \n";
+}
+
+elseif ($preco3 < $preco2 and $preco3 < $preco1) {
+    print "Você deveria comprar o terceiro produto, ta mais em conta! \n";
+}
+
+elseif ($preco1 == $preco2 and $preco1 < $preco3 ) {
+    print "Você deveria comprar o primeiro ou segundo produto, tão a mesma coisa \n";
+}
+
+elseif ($preco3 == $preco2 and $preco3 < $preco1 ) {
+    print "Você deveria comprar o segundo ou terceiro produto, tão a mesma coisa \n";
+}
+
+elseif ($preco1 == $preco3 and $preco1 < $preco2) {
+    print "Você deveria comprar o primeiro ou terceiro produto, tão a mesma coisa \n";
+}
+
+elseif ($preco1 == $preco2 and $preco1 == $preco3) {
+    print "Os três produtos tem o mesmo preço, você que escolhe! \n";
+}
