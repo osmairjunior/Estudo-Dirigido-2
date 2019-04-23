@@ -1,0 +1,24 @@
+<?php
+
+//1. Faça um algoritmo que peça dois números e imprima o maior deles. 
+
+print "Digite o primeiro número: ";
+$frst = fgets(STDIN);
+
+print "Digite o segundo número: ";
+$scnd = fgets(STDIN);
+
+if ($frst > $scnd) {
+
+    print "O primeiro número é maior: $frst \n";
+}
+
+elseif ($frst == $scnd) {
+
+    print "Os dois números são iguais \n";
+}
+
+else {
+
+    print "O segundo número é maior: $scnd \n";
+}
