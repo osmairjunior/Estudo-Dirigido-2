@@ -1,0 +1,43 @@
+<?php
+
+//9. Faça um algoritmo que leia três números e mostre-os em ordem decrescente. 
+
+
+print "Digite o primeiro número (eles não podem ser iguais): ";
+$num1 = fgets(STDIN);
+
+print "Digite o segundo número (eles não podem ser iguais): ";
+$num2 = fgets(STDIN);
+
+print "Digite o terceiro número (eles não podem ser iguais): ";
+$num3 = fgets(STDIN);
+
+//se o 1º for maior
+
+if ($num1 > $num2 and $num2 > $num3) {
+    print "$num1 \n" . "$num2 \n" . "$num3 \n";
+}
+
+elseif ($num1 > $num3 and $num3 > $num2) {
+    print "$num1 \n" . "$num3 \n" . "$num2 \n";
+}
+
+//se o 2º for maior
+
+elseif ($num2 > $num1 and $num1 > $num3) {
+    print "$num2 \n" . "$num1 \n" . "$num3 \n";
+}
+
+elseif ($num2 > $num3 and $num3 > $num1) {
+    print "$num2 \n" . "$num3 \n" . "$num1 \n";
+}
+
+//se o 3º for maior
+
+elseif ($num3 > $num1 and $num1 > $num2) {
+    print "$num3 \n" . "$num1 \n" . "$num2 \n";
+}
+
+elseif ($num3 > $num2 and $num2 > $num1) {
+    print "$num3 \n" . "$num2 \n" . "$num1 \n";
+}
