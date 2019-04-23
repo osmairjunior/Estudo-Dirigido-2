@@ -1,0 +1,23 @@
+<?php
+
+//2. Faça um algoritmo que peça um valor e mostre na tela se o valor é positivo ou negativo.
+
+print "Digite o valor em números: ";
+$valor = fgets(STDIN);
+
+if ($valor > 0) {
+
+    print "O Valor é positivo. \n";
+
+}
+
+elseif ($valor < 0) {
+
+    print "O Valor é negativo. \n";
+
+}
+else {
+
+    print "O valor é 0. \n";
+
+}
